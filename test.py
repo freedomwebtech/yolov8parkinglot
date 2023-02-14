@@ -4,7 +4,7 @@ import numpy as np
 from ultralytics import YOLO
 
 
-model=YOLO('best.pt')
+
 model1=YOLO('yolov8s.pt')
 
 
@@ -37,7 +37,6 @@ while True:
     frame=cv2.resize(frame,(1020,500))
 
     results=model.predict(frame)
-    results=model1.predict(frame)
  #   print(results)
     a=results[0].boxes.boxes
     px=pd.DataFrame(a).astype("float")
