@@ -1,3 +1,0 @@
-Arduino
-Dcmotor
-Esp32
